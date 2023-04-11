@@ -1,0 +1,185 @@
+
+/* generali */
+body{
+    font-family: 'Montserrat', sans-serif;
+    min-width: 550px;
+}
+
+h5{
+    font-size: 12px;
+}
+
+.gray{
+    color: rgb(127, 127, 127);
+}
+
+.flex{
+    display: flex;
+}
+
+.off{
+    display: none;
+}
+
+
+/* upper */
+#upper{
+    display: flex;
+    height: calc(100vh - 100px);
+    background-color: violet;
+}
+
+    /* side */
+
+    #side{
+        height: 100%;
+        width: 250px;
+        background-color: aqua;
+    }
+
+    main{
+        height: 100%;
+        /* flex-grow: 1; */
+        width: calc(100% - 300px);
+    }
+
+
+/* player */
+
+
+footer{
+    height: 90px;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+    /* left */
+
+    #left{
+        align-items: center;
+
+    }
+
+    #left .album{
+        width: 140px;
+        align-items: center;
+        gap: 10px;
+    }
+
+    footer #left-img{
+        width: 30px;
+    }
+
+    #left-img img{
+        width: 100%;
+    }
+
+
+    #left .nome-brano .row{
+        font-size: 10px;
+    }
+
+    #left .icons i{
+        display: block;
+        
+    }
+        /* smartphone */
+
+        @media only screen and (min-width: 576px){
+            
+            footer #left-img{
+                width: 40px;
+            }
+
+        }
+
+        /* tablet */
+
+        @media only screen and (min-width: 768px){
+
+            #left{
+                justify-content: space-between;
+                width: 230px;
+        
+            }
+    
+            #left .icons{
+                display: flex;
+                gap: 10px;
+            }
+
+        }
+
+    /* center */
+
+        #center{
+            text-align: center;
+            width: 50%;
+            margin: 0 10px;
+        }
+
+
+
+        #center .comandi {
+            min-width: 250px;
+            margin-bottom: 10px;
+            
+        }
+        #center .comandi i{
+            cursor: pointer;
+            font-size: 20px;
+            margin: 0 10px;
+            vertical-align: middle;
+            
+        }
+
+        #center .comandi i.fa-circle-play{
+            font-size: 35px;
+        }
+
+
+
+        #center .barra{
+            align-items: center;
+            gap: 10px;
+
+        }
+        #center .barra span{
+            font-size: 12px;
+
+        }
+
+
+        .barra-durata{
+
+            width: 100%;
+
+        }
+
+        .lunghezza{
+            background-color: rgb(127, 127, 127);
+            height: 5px;
+            width: 100%;
+            border-radius: 5px;
+
+        }
+        .avanzamento{
+            background-color: rgb(194, 194, 194);
+            height: 5px;
+            width: 20%;
+            border-radius: 5px;
+        }
+
+        #right{
+            align-items: center;
+            gap: 10px;
+        }
+
+        .barra-volume{
+
+            width: 90px;
+
+        }
