@@ -57,6 +57,7 @@ h5{
 
     #side .contenitore-logo{
         padding-left: 10px;
+        cursor: pointer;
     }
     #side .logo img{
         max-width: 100%;
@@ -79,6 +80,7 @@ h5{
         padding-left: 10px;
         margin-bottom: 5px;
         color: rgb(210, 210, 210);
+        cursor: pointer;
     }
     #side menu ul li div{
         width: 35px;
@@ -93,6 +95,9 @@ h5{
         max-width: 100%;
         filter: opacity(0.7);
     }
+
+
+
 
     /* utente */
 
@@ -116,6 +121,7 @@ h5{
         margin-bottom: 20px;
         padding-left: 20px;
         color: rgb(127, 127, 127);
+        cursor: pointer;
     }
 
 
@@ -132,6 +138,7 @@ h5{
     .utente .utente-bottom{
         width: 100%;
         padding-left: 10px;
+        cursor: pointer;
     }
 
     .utente .profilo{
@@ -149,6 +156,25 @@ h5{
         border-radius: 50%;
        
     }
+
+    /* interaction */
+
+    #side li:hover{
+        color: white;
+    }
+    #side li:hover h4{
+        font-weight: 400;
+    }
+    #side li:hover img{
+        filter: opacity(0.9);
+    }
+    .utente .utente-top:hover{
+        color: white;   
+    }
+    .utente .utente-top:hover img{
+        filter: opacity(0.9);   
+    }
+
 
         /* smartphone */
 
@@ -235,6 +261,7 @@ h5{
                 font-weight: lighter;
                 gap: 10px;
                 align-items: center;
+                cursor: pointer;
             }
             #side .playlist h3{
                 color: white;
@@ -247,10 +274,17 @@ h5{
             
             }
             
+                /* interaction */
+
+            #side li:hover{
+                color: white;
+                font-weight: 400;
+            }
+
+    
 
 
-
-        }
+                }
 
 
 
@@ -288,6 +322,14 @@ h5{
         background-color: rgba(0, 0, 0, 0);
         border: 1px solid white;
         color: white;
+        cursor: pointer;
+    }
+
+    /* interazioni */
+
+    button:hover{
+        transform: scale(105%);
+        background-color: rgba(255, 253, 253, 0.2);
     }
 
 
@@ -306,6 +348,10 @@ h5{
         font-size: 14px;
     }
 
+    main menu li{
+        cursor: pointer;
+    }
+
 
 
         /* smartphone */
@@ -318,6 +364,12 @@ h5{
 
             }
 
+        }
+
+        /* interazioni */
+
+        main menu li:hover{
+            color: white;
         }
 
 
@@ -335,6 +387,7 @@ h5{
    
     .contenuto-album{
         width: 90%;
+        cursor: pointer;
     }
     .copertina-album{
         max-width: 100%;
@@ -374,12 +427,21 @@ h5{
 
     /* terza sezione */
 
+    #terza .play-hover{
+        border-radius: 50%;
+    }
+
     #terza img{
         border-radius: 50%;
     }
 
 
+    /* interactions */
 
+    .contenuto-album:hover .off{
+        display: inline-flex;
+    }
+        
 
 /* player */
 
@@ -406,6 +468,7 @@ footer{
         width: 140px;
         align-items: center;
         gap: 10px;
+        cursor: pointer;
     }
 
     footer #left-img{
@@ -423,8 +486,22 @@ footer{
 
     #left .icons i{
         display: block;
+        cursor: pointer;
         
     }
+    /* interazioni */
+
+    #left .icons i:hover{
+        color: white;
+    }
+
+    #left .album:hover .row > div{
+        color: white;
+        text-decoration: underline;
+    }
+
+
+
         /* smartphone */
 
         @media only screen and (min-width: 576px){
@@ -470,11 +547,12 @@ footer{
 
             
         }
-        #center .comandi i{
+        .comandi i{
             cursor: pointer;
             font-size: 20px;
             margin: 0 10px;
             vertical-align: middle;
+            
             
         }
 
@@ -488,6 +566,7 @@ footer{
             align-items: center;
             justify-content: center;
             gap: 10px;
+            cursor: pointer;
 
         }
 
@@ -506,6 +585,8 @@ footer{
             height: 5px;
             width: 100%;
             border-radius: 5px;
+            cursor: pointer;
+            
 
         }
         .avanzamento{
@@ -513,15 +594,45 @@ footer{
             height: 5px;
             width: 20%;
             border-radius: 5px;
+            position: relative;
         }
+
+
+        .pallino{
+            position: absolute;
+            top: 50%;
+            left:100%;
+            transform: translate(-50%, -50%);
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+
+        /* destra */
 
         #right{
             align-items: center;
             gap: 10px;
+        }
+        #right i{
+            cursor: pointer;
         }
 
         .barra-volume{
 
             width: 80px;
 
+        }
+
+        /* interazioni */
+
+        footer i:hover{
+            transform: scale(115%);
+        }
+        footer .lunghezza:hover .avanzamento{
+            background-color: yellowgreen;
+        }
+        footer .lunghezza:hover .avanzamento .off{
+            display: block;
         }
