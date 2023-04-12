@@ -13,13 +13,155 @@
     <title>Spotify</title>
 </head>
 <body>
+    <!-- upper -->
     <div id="upper">
-        <div id="side"></div>
-        <main></main>
+        <!-- barra laterale -->
+        <div id="side" class="flex">
+
+            <div class="contenitore-top flex">
+
+                <!-- logo -->
+
+                <div class="contenitore-logo">
+                    
+                    <div class="logo">
+                        
+                        <img class="on" src="img/logo-small.svg" alt="">
+                        <img class="off" src="img/logo.svg" alt="">
+                        
+                    </div>
+                    
+                </div>
+
+                <!-- menu -->
+                <menu>
+                    
+                    
+                    <ul>
+                        <li class="flex">
+                            <div>
+                                <img src="img/home.svg" alt="home">
+                            </div>
+                            <h4 class="off">Home</h4>
+                        </li>
+                        <li class="flex">
+                            <div>
+                                <img src="img/search.svg" alt="cerca">
+                            </div>
+                            <h4 class="off">Cerca</h4>
+                        </li>
+                        <li class="flex">
+                            <div>
+                                <img src="img/libreria.svg" alt="libreria">
+                            </div>
+                            <h4 class="off">La tua libreria</h4>
+                        </li>
+                        
+                    </ul>
+                    
+                </menu>
+                
+                <!-- playlist -->
+                
+                
+                <div class="playlist off">
+            
+                    <ul>
+                        <li><h3>PLAYLIST</h3></li>
+                        <li class="flex">
+                            <i class="fa-solid fa-square-plus"></i>
+                            <span>Crea Playlist</span>
+                        </li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+                    
+                </div>
+                
+            </div>
+        
+            <!-- utente -->
+            <div class="contenitore-bottom">
+
+                <div class="utente">
+                    
+                    <div class="utente-top flex">
+                        
+                        <div class="download">
+                            <img src="img/download.svg" alt="download">
+                        </div>
+                        <h4 class="off">Installa app</h4>
+                        
+                    </div>
+                    
+                    <div class="utente-bottom flex">
+                        
+                        <div class="profilo">
+                            <img src="img/profile.svg" alt="profilo">
+                        </div>
+                        <h4 class="off">Pippo Baudo</h4>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+
+        <!-- contanuti -->
+        <main>
+
+            <!-- upgrade -->
+
+            <div class="upgrade">
+
+                <button>EFFETTUA L'UPGRADE</button>
+
+            </div>
+
+            <!-- menu alto -->
+            <menu>
+
+                <ul>
+                    <li>
+                        IN EVIDENZA
+                        <div class="underline off"></div>
+                    </li>
+                    <li>
+                        PODCAST
+                        <div class="underline off"></div>
+                    </li>
+                    <li>
+                        CLASSIFICHE
+                        <div class="underline off"></div>
+                    </li>
+                    <li>
+                        GENERI E MOOD
+                        <div class="underline off"></div>
+                    </li>
+                    <li>
+                        NUOVE USCITE
+                        <div class="underline off"></div>
+                    </li>
+                    <li>
+                        SCOPRI
+                        <div class="underline off"></div>
+                    </li>
+                </ul>
+            </menu>
+
+
+        </main>
     
     </div>
     
-    
+    <!-- player -->
     <footer class="flex">
         <div id="left" class="flex">
             
@@ -47,7 +189,9 @@
 
         </div>
 
+        <!-- parte centrale -->
         <div id="center">
+
             <div class="comandi">
                 <i class="fa-solid fa-shuffle"></i>
                 <i class="fa-solid fa-backward-step"></i>
@@ -55,15 +199,20 @@
                 <i class="fa-solid fa-forward-step"></i>
                 <i class="fa-solid fa-arrow-rotate-right"></i>
             </div>
-            <div class="barra flex">
-                <span>0:25</span>
-                <div class="barra-durata">
-                    <div class="lunghezza">
-                        <div class="avanzamento"></div>
+            <div>
+
+                <div class="barra flex">
+                    <span>0:25</span>
+                    <div class="barra-durata">
+                        <div class="lunghezza">
+                            <div class="avanzamento"></div>
+                        </div>
                     </div>
+                    <span>4:35</span>
                 </div>
-                <span>4:35</span>
+            
             </div>
+
         </div>
         <div id="right" class="flex">
 
@@ -71,10 +220,14 @@
             <i class="fa-solid fa-desktop"></i>
             <i class="fa-solid fa-volume-high"></i>
 
-            <div class="barra-volume">
-                <div class="lunghezza">
-                    <div class="avanzamento"></div>
+            <div>
+
+                <div class="barra-volume">
+                    <div class="lunghezza">
+                        <div class="avanzamento"></div>
+                    </div>
                 </div>
+
             </div>
 
         </div>

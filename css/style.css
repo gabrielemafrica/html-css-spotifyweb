@@ -5,6 +5,10 @@ body{
     min-width: 550px;
 }
 
+ul{
+    list-style: none;
+}
+
 h5{
     font-size: 12px;
 }
@@ -22,26 +26,287 @@ h5{
 }
 
 
+
+
 /* upper */
 #upper{
     display: flex;
-    height: calc(100vh - 100px);
-    background-color: violet;
+    height: calc(100vh - 90px);
+    background-color: rgb(19, 25, 33);
+    
 }
 
     /* side */
 
     #side{
+        max-height: 100%;
         height: 100%;
-        width: 250px;
-        background-color: aqua;
+        width: 60px;
+        background-color: black;
+        padding: 10px 0;
+        color: white;
+        flex-direction: column;
+        justify-content: space-between;
     }
+    /* parte alta */
+    #side .contenitore-top{
+        flex-direction: column;
+        height: 100%;
+    }
+
+
+    #side .contenitore-logo{
+        padding-left: 10px;
+    }
+    #side .logo img{
+        max-width: 100%;
+    }
+
+    #side .logo {
+        width: 40px;
+        margin-bottom: 10px;
+        
+    }
+
+    /* menu */
+
+
+    #side menu ul{
+        margin-bottom: 25px;
+    }
+    #side menu ul li{
+        width: 100%;
+        padding-left: 10px;
+        margin-bottom: 5px;
+        color: rgb(210, 210, 210);
+    }
+    #side menu ul li div{
+        width: 35px;
+        color: rgb(210, 210, 210);
+    }
+
+    #side menu ul li h4{
+        font-weight: lighter;
+    }
+
+    #side menu img{
+        max-width: 100%;
+        filter: opacity(0.7);
+    }
+
+    /* utente */
+
+
+    #side .contenitore-bottom{
+        overflow: hidden;
+        
+    }
+
+
+    #side .utente{
+        
+        width: 60px;
+        min-height: 100%;
+        margin-bottom: 10px;
+
+    }
+
+    .utente .utente-top{
+        width: 100%;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        color: rgb(127, 127, 127);
+    }
+
+
+
+    .utente-top .download img{
+        max-width: 100%;
+        filter: opacity(0.7);
+    }
+    .utente-top .download{
+        width: 20px;
+    }
+
+
+    .utente .utente-bottom{
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .utente .profilo{
+        background-color: rgb(128, 128, 128);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+
+    }
+
+    .utente .profilo img{
+        
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+       
+    }
+
+        /* smartphone */
+
+        @media only screen and (min-width: 576px){
+            
+            #side{
+                width: 250px;
+                padding-top: 20px;
+            }
+
+            #side .off{
+                display: inline-block;
+            }
+
+            #side .on{
+                display: none;
+            }
+
+            #side .contenitore-logo{
+                padding-left: 20px;
+                margin-bottom: 30px;
+            }
+
+            #side .logo{
+                width: 80%;
+            }
+
+            #side menu ul li{
+                padding-left: 20px;
+                align-items: center;
+                gap: 10px;
+            }
+
+
+
+            #side .utente{
+        
+                width: 250px;
+
+            }
+            .utente .utente-top{
+                width: 80%;
+                margin: 0 auto;
+                gap: 10px;
+                border-bottom: 1px solid rgb(127, 127, 127);
+                justify-content: left;
+                padding-left: 0;
+                padding-bottom: 10px;
+                margin-bottom: 15px;
+            }
+
+            .utente .utente-top h4{
+                font-size: 15px;
+                font-weight: 500;
+            }
+
+
+
+            .utente .utente-bottom{
+               
+                padding-left: 20px;
+                align-items: center;
+                gap: 10px;
+            }
+
+
+            /* playlist */
+
+            #side .playlist{
+               
+                padding-left: 20px;
+                
+                overflow: auto;
+            
+            }
+
+ 
+
+
+
+            #side .playlist li{
+                margin-bottom: 15px;
+                color: rgb(128, 128, 128);
+                font-weight: lighter;
+                gap: 10px;
+                align-items: center;
+            }
+            #side .playlist h3{
+                color: white;
+                font-size: 16px;
+            }
+
+            #side .playlist li i{
+                
+                font-size: 45px;
+            
+            }
+            
+
+
+
+        }
+
+
+
+
+    /* contenuti */
 
     main{
         height: 100%;
-        /* flex-grow: 1; */
-        width: calc(100% - 300px);
+        flex-grow: 1;
+        /* width: calc(100% - 60px); */
+        overflow: auto;
+        padding: 120px 20px;
     }
+
+    /* upgrade */
+    .upgrade{
+        height: 90px;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: calc(100% - 60px);
+        text-align: end;
+        padding: 25px 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+
+    .upgrade button{
+
+        height: 40px;
+        border-radius: 50px;
+        padding: 0 50px;
+        background-color: rgba(0, 0, 0, 0);
+        border: 1px solid white;
+        color: white;
+    }
+
+
+
+
+
+        /* smartphone */
+
+        @media only screen and (min-width: 576px){
+            main{
+                /* flex-grow: 1; */
+                /* width: calc(100% - 300px); */
+            }
+            .upgrade{
+
+                width: calc(100% - 250px);
+
+            }
+
+        }
+
 
 
 /* player */
@@ -54,12 +319,14 @@ footer{
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
+
 }
 
     /* left */
 
     #left{
         align-items: center;
+        min-width: 180px;
 
     }
 
@@ -118,14 +385,17 @@ footer{
         #center{
             text-align: center;
             width: 50%;
-            margin: 0 10px;
+            margin: 0 -20px;
+    
         }
+        
 
 
 
         #center .comandi {
             min-width: 250px;
             margin-bottom: 10px;
+
             
         }
         #center .comandi i{
@@ -144,9 +414,11 @@ footer{
 
         #center .barra{
             align-items: center;
+            justify-content: center;
             gap: 10px;
 
         }
+
         #center .barra span{
             font-size: 12px;
 
@@ -154,9 +426,7 @@ footer{
 
 
         .barra-durata{
-
-            width: 100%;
-
+            width: 50%;
         }
 
         .lunghezza{
@@ -180,6 +450,6 @@ footer{
 
         .barra-volume{
 
-            width: 90px;
+            width: 80px;
 
         }
