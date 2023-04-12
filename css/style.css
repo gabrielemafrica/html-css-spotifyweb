@@ -262,7 +262,8 @@ h5{
         flex-grow: 1;
         /* width: calc(100% - 60px); */
         overflow: auto;
-        padding: 120px 20px;
+        padding: 120px 20px 0 20px;
+        color: white;
     }
 
     /* upgrade */
@@ -275,6 +276,7 @@ h5{
         position: absolute;
         top: 0;
         right: 0;
+        z-index: 90;
     }
 
 
@@ -289,16 +291,27 @@ h5{
     }
 
 
+    /* menu alto */
+
+    main menu{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    main menu ul{
+        width: 100%;
+        justify-content: center;
+        color: rgb(127, 127, 127);
+        flex-wrap: wrap;
+        gap: 30px;
+        font-size: 14px;
+    }
 
 
 
         /* smartphone */
 
         @media only screen and (min-width: 576px){
-            main{
-                /* flex-grow: 1; */
-                /* width: calc(100% - 300px); */
-            }
+
             .upgrade{
 
                 width: calc(100% - 250px);
@@ -306,6 +319,65 @@ h5{
             }
 
         }
+
+
+    /* area canzoni */
+    section{
+        margin-bottom: 30px;
+    }
+    .titolo-sezione{
+        margin-bottom: 25px;
+    }
+    .titolo-sezione h2{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+   
+    .contenuto-album{
+        width: 90%;
+    }
+    .copertina-album{
+        max-width: 100%;
+        position: relative;
+    }
+    .copertina-album .play-hover{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        font-size: 60px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .copertina-album img{
+        max-width: 100%;
+    }
+
+    .centre{
+        text-align: center;
+    }
+
+    .description-album{
+        margin: 10px 0;
+    }
+    .description-album h4{
+        margin-bottom: 10px;
+    }
+    .description-album h6, section h6{
+        color: rgb(124, 126, 131);
+        font-size: 12px;
+    }
+
+    /* terza sezione */
+
+    #terza img{
+        border-radius: 50%;
+    }
+
 
 
 
