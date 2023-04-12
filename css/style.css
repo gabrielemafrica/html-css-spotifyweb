@@ -43,7 +43,7 @@ h5{
         height: 100%;
         width: 60px;
         background-color: black;
-        padding: 10px 0;
+        padding-top: 10px;
         color: white;
         flex-direction: column;
         justify-content: space-between;
@@ -92,7 +92,7 @@ h5{
     }
 
     #side menu img{
-        max-width: 100%;
+        max-width: 80%;
         filter: opacity(0.7);
     }
 
@@ -100,12 +100,6 @@ h5{
 
 
     /* utente */
-
-
-    #side .contenitore-bottom{
-        overflow: hidden;
-        
-    }
 
 
     #side .utente{
@@ -143,16 +137,16 @@ h5{
 
     .utente .profilo{
         background-color: rgb(128, 128, 128);
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
 
     }
 
     .utente .profilo img{
         
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
        
     }
@@ -167,6 +161,9 @@ h5{
     }
     #side li:hover img{
         filter: opacity(0.9);
+    }
+    #side li:focus{
+        border-left: 5px solid yellowgreen;
     }
     .utente .utente-top:hover{
         color: white;   
@@ -195,16 +192,17 @@ h5{
 
             #side .contenitore-logo{
                 padding-left: 20px;
-                margin-bottom: 30px;
+                margin-bottom: 25px;
             }
 
             #side .logo{
-                width: 80%;
+                width: 70%;
             }
 
             #side menu ul li{
                 padding-left: 20px;
                 align-items: center;
+                font-size: 14px;
                 gap: 10px;
             }
 
@@ -227,7 +225,7 @@ h5{
             }
 
             .utente .utente-top h4{
-                font-size: 15px;
+                font-size: 14px;
                 font-weight: 500;
             }
 
@@ -262,6 +260,7 @@ h5{
                 gap: 10px;
                 align-items: center;
                 cursor: pointer;
+                font-size: 14px;
             }
             #side .playlist h3{
                 color: white;
@@ -352,6 +351,14 @@ h5{
         cursor: pointer;
     }
 
+    .underline{
+        margin: 3px auto 0 auto;
+        height: 3px;
+        background-color: yellowgreen;
+        border-radius: 3px;
+        width: 40%;
+    }
+
 
 
         /* smartphone */
@@ -371,6 +378,13 @@ h5{
         main menu li:hover{
             color: white;
         }
+        main menu li:focus .off{
+            display: block;
+        }
+
+
+
+
 
 
     /* area canzoni */
@@ -453,6 +467,8 @@ footer{
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
+    position: relative;
+    z-index: 91;
 
 }
 
